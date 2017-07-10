@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Contact Me</title>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src='js/main.js'></script>
+<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+<script>
+
+    $(document).ready(function(event){
+      $('#contactForm').submit(function(){
+                $('#submit').text('Sending ...');
+				event.preventDefault();
+				msg = createMsg();
+				sendMsg(msg);
+            });
+        });
+
+</script>
+</head>
+<body>
+
+<div id='status' hidden></div>
+<button id="signin-button" onclick="handleAuthClick();"> Login to auto send message</button>
+
+<form name="sentMessage" id="contactForm" >
+	<label>Name</label>
+    <inputid="name" type="text" placeholder="Name" required>
+    <br />
+    <label>Email Address</label>
+    <input  id="email" type="email" placeholder="Email Address" required>
+    <br/>
+    <label>Phone Number</label>
+    <input  id="phone" type="tel" placeholder="Phone Number" required>
+	<br/>
+    <label>Message</label>
+    <textarea id="message" rows="5" placeholder="Message" required></textarea>
+    <br />
+	<input type="submit" id='submit' class="btn btn-success btn-lg" value="Send" disabled>
+</form>
+
+</body>
+</html>
