@@ -47,7 +47,7 @@
             getUserdata();
         } else {
           //showing error if user is not signed in
-			$('#status').show().text("Error please accept the permission request, i'm using only to send a message on your behlaf and it won't be stored.");
+			$('#status').removeAttr('hidden').text("Error please accept the permission request, i'm using only to send a message on your behlaf and it won't be stored.");
         }
       }
 
@@ -84,9 +84,9 @@
             $('#submit').text('Send');
             if(resp.labelIds[0] == 'SENT'){
                 $('#message').val("");
-                $('#status').show().text("Message sent, I'll reach out to you soon.");
+                $('#status').removeAttr('hidden').text("Message sent, I'll reach out to you soon.");
             }else{
-                $('#status').show().text("Failed to send the message, please refresh and try again.");
+                $('#status').removeAttr('hidden').text("Failed to send the message, please refresh and try again.");
             }
         }
 		function createMsg(){
