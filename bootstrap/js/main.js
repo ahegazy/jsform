@@ -82,7 +82,7 @@
       }
         function MsgSent(resp){
             $('#submit').text('Send');
-            if(resp.labelIds[0] == 'SENT'){
+            if(resp.id && resp.threadId && resp.labelIds){
                 $('#message').val("");
                 $('#status').removeAttr('hidden').text("Message sent, I'll reach out to you soon.");
             }else{
