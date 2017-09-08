@@ -4,25 +4,6 @@
 <head>
 <title>Contact Me</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="js/jquery/jquery.min.js"></script>
-
-<script src='js/main.js'></script>
-<script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-</script>
-<script>
-
-    $(document).ready(function(event){
-      $('#contactForm').submit(function(){
-                $('#submit').text('Sending ...');
-				event.preventDefault();
-				msg = createMsg();
-				sendMsg(msg);
-            });
-        });
-
-</script>
 </head>
 <body>
         <div class="container">
@@ -71,7 +52,28 @@
                 </div>
             </div>
         </div>
+
+
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src='js/main.js'></script>
+<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+<script>
+
+    $(document).ready(function(event){
+      $('#contactForm').submit(function(){
+                $('#submit').text('Sending ...');
+				event.preventDefault();
+				msg = createMsg();
+				sendMsg(msg);
+				return false;
+            });
+        });
+
+</script>
 
 </body>
 

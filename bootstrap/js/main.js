@@ -1,4 +1,5 @@
-      var CLIENT_ID = 'YOUR CLIENT ID GOES HERE';
+      var CLIENT_ID = 'YOUR CLIENT ID GOES HERE'; //CHANGE ID HERE
+      var CLIENT_MAIL = 'YOUR MAIL GOES HERE'; //CHANGE MAIL HERE 'message will be sent to this mail'
 
       // Array of API discovery doc URLs for APIs used by the quickstart
       var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest","https://people.googleapis.com/$discovery/rest?version=v1"];
@@ -99,7 +100,7 @@
                         "Content-length: 5000\n" +
                         "Content-Transfer-Encoding: message/rfc2822\n" +
                         "from: \""+name+"\" <"+email+">\r\n" +
-                        "to: YOURMAILGOESHERE\r\n" +
+                        "to: "+CLIENT_MAIL+"\r\n" +
                         "Subject: A message from "+name+"\r\n\r\n" +
 
                         "email: " + email +" ,PHONE: "+ phone +"\n\n" + body
