@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Contact Me</title>
+</head>
+<body>
+
+<div id='status' hidden></div>
+<form name="sentMessage" id="contactForm" >
+	<label>Name</label>
+    <input id="name" type="text" placeholder="Name" required>
+    <br />
+    <label>Email Address</label>
+    <input  id="email" type="email" placeholder="Email Address" required>
+    <br/>
+    <label>Phone Number</label>
+    <input  id="phone" type="tel" placeholder="Phone Number" required>
+	<br/>
+    <label>Message</label>
+    <textarea id="message" rows="5" placeholder="Message" required></textarea>
+    <br />
+	<input type="submit" id='submit' class="btn btn-success btn-lg" value="Send">
+</form>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+<script src='js/init.js'></script>  
+<script src='js/main.js'></script>
+
+</body>
+</html>
