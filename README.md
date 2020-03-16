@@ -22,5 +22,5 @@ this [tutorial](https://ahegazy.github.io/blog/how-to-create-a-javascript-only-c
 
 - A bootstrap version of the form in [bootstrap](firebase/bootstrap) directory.
 
-###### Have any question or request .. 
-Contact ME: Ahmad Hegazy <ahegazipro@gmail.com>
+## Contribution
+for any problems or questions open an issue, if you have any fixes send a pull request
