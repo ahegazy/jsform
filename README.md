@@ -4,7 +4,7 @@ I used google api to send a message to my mail containing the form data. [liveEx
 A javascript only Contact Form you can find a tutorial explaining how it is created and it's idea at my [blog](https://ahegazy.github.io)
 
 ## UPDATE 10 Feb 2019
-New versio Using firebase Database to store the messages in [Firebase](firebase). [liveExample](ahegazy.github.io/contact)
+New versio Using firebase Database to store the messages in [Firebase](firebase). [liveExample](https://ahegazy.github.io/contact)
 
 
 
